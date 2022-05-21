@@ -1,0 +1,695 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title> Personal Statement</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6dcd7175-9b26-495d-aeea-d3934fe453ed" class="page sans"><header><h1 class="page-title"> Personal Statement</h1></header><div class="page-body"><figure id="72b3a913-199c-4154-951c-8b2342c5f43e" class="link-to-page"><a href="Personal%20Statement%206dcd71759b26495daeead3934fe453ed/sop%E5%AF%AB%E4%BD%9C%E7%B4%A0%E6%9D%90%2072b3a913199c4154951c8b2342c5f43e.html">sop寫作素材</a></figure><p id="777c99d7-4f03-4760-a5f8-d9e2da43ddf7" class=""><span class="user">@Chiao-Wen Cheng</span> </p><h3 id="949bc7d2-bf54-45ae-844e-4064a7ca0f96" class="">Motivation </h3><p id="372c611e-7d6e-42ea-b2f2-29c144f8f52a" class="">I believe that healthy financial decision making is a crucial key that could open a dreamer&#x27;s door and make a brighter future happen. I was born in a small village where agriculture is prevailing, and people and small businesses there have relatively low level of financial literacy. Growing up in such environment, I&#x27;ve always hoped to help the entire society increase their access to finance system and maximize the utility of their assets. My goal to pursue a Master of Finance degree in Simons Business School, University of Rochester is to ultimately help individuals and corporates make better financial decisions, and hence possess the capability to achieve their long-term life goals.</p><p id="21cf1a0d-b489-480b-a60b-080e54b3c266" class="">
+</p><p id="fca87e22-832d-490b-ac51-1cccd7971537" class="">
+</p><h3 id="81d611a7-cfa8-4aca-a2f2-7b6890d29700" class="">Why you (Nepal, personality)</h3><p id="51a61df3-d901-4a17-8362-612a2373044d" class="">During my study at the National Central University, I had an opportunity to travel to Nepal as a member of an international medical volunteer group. Assisting the poor and sick had cultivated my empathy towards a wider view of the world, and I became more observant and caring with people in need of help. Apart from medical services, one of our main goals is to find a solution for overall poverty there. Nepal is a country ranked 180+ among all the countries when it comes to GDP per capita. Many people who live in the country don&#x27;t even have a bank account. Instead, they have to save their values using physical assets, such as livestocks and properties. To assist local people dealing with poverty issues, my partner and I came up with a viable method for them to generate steady income. Cooperated with local university students, we built a connection between local mother committee and a non-profit organization in Taiwan to ensure that they can earn money from selling handicrafts to Taiwan. From living their daily lives in Nepal and witnessing the extreme poverty there, I recognized that financial accessibility is a stepping stone to education and health. The trip to Nepal had broadened my horizons and motivated me to become a financial advisor one day. </p><p id="4de46667-c8d8-4440-9dcf-2c51dce663fc" class="">
+</p><p id="1ae6a44e-672e-448e-968f-c2ea0ef95d3d" class=""><mark class="highlight-blue">*/ 有顏色的字是多寫的先不用看 </mark></p><p id="1fd1942e-f93c-4c31-a9d7-2cf4305fcc0a" class="block-color-blue">I want to prepare my self with skills of asset management and financial modeling</p><h3 id="101d6a84-dfcf-41f1-9918-f42f10ac78ad" class="">Gap (why you need the degree)</h3><p id="2e443d68-49af-47a9-9bb9-1802cfd3e73e" class="">To learn more about asset management in practice, I started running a six-figure fund for my family in 2020. My background of finance from being a finance major in college years had equipped me with the fundamental knowledge to finance-related concepts and theories. I learned how to properly conduct fundamental analysis and how to evaluate a company using several financial models such as discounted cash flow model from the course &quot;Financial Statement Analysis&quot; I took in school.  Additionally, In order to polish my trading strategies, I took the course &quot;Financial Engineering&quot;, in which I had gained knowledge of applying Python programming to adjust my trading strategies according to backtesting results. To further broadening my academic and practical experiences, I deeply believe that I need more in-depth training and hands-on experiences to become a well-rounded financial advisor, and the Simon Business School would be the perfect environment for me to delve into the more advanced study. </p><p id="e1d1f8e4-37af-4db8-9ffb-9da59c569201" class="">
+</p><p id="b521931d-db2b-43e3-bb75-85e92dd98e7f" class="">
+</p><p id="a921c851-982f-41dc-968a-92a3a75f292c" class=""><mark class="highlight-red">trough a closer investigation of the company Tong Hsing Electronic Industries Ltd., which is a Taiwan provider of micro module foundry services.</mark> </p><p id="df0e530a-3fce-4c4d-8088-34a52019ac53" class="block-color-blue">most efficient way for me to learn in-depth knowledge in asset management</p><p id="e89719b2-3508-43d1-a296-bf359323a852" class="block-color-blue">expertise in asset management</p><p id="23cd76be-b177-4f03-8d6b-87500cf6e816" class="block-color-blue">Furthermore, my participation in several extracurricular activities, served as a leader in three different clubs, also sharpen my net-working skill and develop my leadership skills.</p><p id="d16b5e66-bb1b-41d1-b01f-3e844d116da9" class="block-color-blue">comparing the target firm with competing companies and forecasting future earnings based on economy condition</p><p id="6b965828-ade1-4ca1-b0a2-b6592b0dcd5c" class="block-color-blue">Our analysis started from ratio analysis, to assess current performance and the financial health of the company. </p><p id="e44f19de-e81f-4234-99a2-a8024b078725" class="block-color-blue">apply dcf to my own portfolio</p><p id="1bcd0f7b-e93c-40d9-93a6-40e6df7c0a19" class="block-color-blue">risk management (several pull backs )</p><p id="08719d67-ba70-4da5-a0f3-3c3763f2a065" class="block-color-blue">to prepare myself for ...</p><p id="68d78460-6ed2-404c-a520-3ac4e8dfa0b2" class="block-color-blue">want to get full insight of asset management</p><h3 id="a8a7429e-0a03-4acb-ba31-655b9eccfd88" class="">why school</h3><p id="18abe61c-0a77-4bd1-8c3b-c273874915d1" class="">I believe that strong communication skills, sufficient knowledge of wealth management and financial modeling, and a sense of analytical thinking are very important in order to be working in the financial advisory industry. By taking the course &quot;Quantitative Finance with Python&quot;, I would become familiar with using quantitative models for better financial decision making. Besides that, because of the experience of real-world cases studies in this course, I believe that it can efficiently help me learn how to properly apply the models on decision making. Moreover, in the course &quot;Asset Management&quot;, since the course focuses on practical aspects, it would provide a chance for me to see a bigger picture of portfolio management and to learn how to tackle potential risks. Furthermore, not to mention that the opportunity of a real-world experience in Simon would be abundant. The program with internship tracks in the United States provided by the Simon Business school is very appealing as well. From all the above reasons, I consider the Simon Business School program an indispensable chance for me to strengthen my ability to work in the financial field anywhere in the States and beyond. I will also take advantages of Simon Business School&#x27;s professional student clubs, such as Simon VISION consulting and Meliora Fund, to polish my problem-solving skills and to put the theories into practice. A wide variety of visions and massive resources that are provided by Simon would lay the foundation for me to add values to different aspects of the entire society.</p><p id="d275af55-4a66-42f6-8d4b-864db64abb75" class="">
+</p><h3 id="3ee0db21-e86a-49c9-b0aa-ea86803d5153" class="">short-term long-term goal &amp; conclusion</h3><p id="ed066a45-1911-4a04-b1f7-64c4bf5434d6" class="">For my short-term goal, I hope to be a financial advisor of a financial institution, helping my individual clients to meet their financial goals and helping my corporate client to expend their scales. I also hope to get the CFA Level II license 3~5 years after I graduate from your school. As for my long-term goal, I aim to be either a senior financial advisor or a financial manager. I am a person who appreciate the value of selflessness, generosity, and kindness. Therefore, my goal as a financial advisor is not only helping my clients to make better financial decisions but educating them with correct financial concepts. I am confidence that I am a great team-worker who can build connections among different cultural backgrounds and grow better together with my friends. I believe that I am fully-prepared to meet the requirements of your program, and I am profoundly excited to become one of the members of Simon&#x27;s community if given the chance, and become ever better.</p><p id="575e40d1-1bbc-44e3-bee4-7da54143af39" class="">
+</p><p id="f09fbdd5-9a06-40d6-830a-d76deb0a41a4" class="">
+</p><p id="f612e7ce-2184-4af5-b823-15fcd8f95928" class="">
+</p><p id="84458a48-bfb3-41af-8d41-2c4a58f848ca" class="">
+</p><p id="fcb74355-6b99-43f1-9bad-8c07b06e5e69" class="">
+</p><p id="374b5b97-eda3-462a-83e8-3104db074628" class="">
+</p><h3 id="1682541a-973a-459b-9e84-412aa7b2bb70" class="">備用：</h3><p id="b1561c17-74cd-44a0-b077-59c4c284a75e" class="">
+</p><p id="1fd6b369-6120-45e9-b41f-16ae81357f23" class=""> to add value to our society. 
+</p><p id="daad7023-68d1-47b5-9982-2f7119301d89" class="">, and financing the the fundamental way to solve these issues.
+</p><p id="ec3ce9fa-5ec8-41a3-9a36-5079a1e272b2" class="">my goal as a financial advisor is not only to manage asset for my clients but educate them, again, I believe that ....</p><p id="dcb939b1-6cd2-4c3e-984a-6a0a487cdd59" class="">
+reach their perspective goals. 
+I feel joyful when I was serving others.
+lies in my personal belief in </p><p id="148debe1-dfc3-4771-a003-4b2a75a2e81d" class="">I think that there are two perspectives regarding helping people to with the advance of technology, we can add more convenience in our life and hence improve our life</p><p id="2eb98daf-964d-46f6-be95-592a53c02a5f" class="">My my goal to pursue my motivation</p><p id="1b83c449-efb0-4c52-8c37-0b6f54b03ead" class="">to help people to become better self by reaching their financial goal</p><p id="f91e28d1-4067-48c0-aeaf-52bdd32cc1d9" class="">My personal belief</p><p id="c6d9585f-bc54-4b76-854a-71d42e94485c" class="">financing is the fundamental way for people to reach reach their gaol.</p><p id="0e77f15e-4401-4acc-b147-77bd24480218" class="">People all over the world posses the right to choose the way they live their live, and my personal belief is to help as many as people to have a better life quality or to reach their dream. </p><p id="2bcaebcc-693e-464d-bcf9-5fde6aa9ff33" class="">two perspective, 1. help people to live a life they wanted 2. innovative technology that bring convenient to our community. I am the one to help individuals and corporates to achieve this goal.  that is to help them to make better financial decisions</p><p id="729ef90b-c0ff-4419-a9e8-f810e39541cd" class="">I used to had a chance to served in the </p><p id="3078cec0-da4d-4554-b48f-7dcab85257df" class="">去過返鄉服務 尼博爾(人均GDP排行15多 most people not even have a bank account) i see how financial education and finance inclusion is important to people who want to chase their dream </p><p id="4f43cb9b-f7a0-43ee-94fc-055cf0f25ab6" class="">the importance of finance to education and health 文化適應力、跨國團隊合作</p><p id="6f47fef3-0ad5-4d6c-b0eb-c4d237a69246" class="">value store in physical asstes</p><p id="f5d58d4c-4f36-4974-bc4a-544bdb6b2823" class="">my imagination to ....(我對未來、產業的想像)
+為什麼去尼泊爾？我想走別人沒走過的路(explore different possibilities)，想出去看看，體驗跨文化合作, also a great chance to test my self to see whether I am capable of cooperate with people with different culture background</p><p id="d9c36876-634b-4ecf-ada5-614587ebd712" class="">that is not enough i imagine one day I can use my knowledge to help others to make better financial decision and hence improve their life </p><p id="2b16475d-9258-48ee-8f13-d4ff7348dbe8" class="">make an impact</p><p id="f26e26f0-5d39-4168-9569-7aa33af09a7e" class="">financial governence</p><p id="539635d3-d34e-4369-8dbc-41e9f76e3029" class="">讓世界更好</p><p id="be19a003-65ef-4131-a951-f9d5c6007d4a" class="">innovative world </p><p id="c8f96145-a5fa-40c8-b019-66baa4e3d977" class="">see hope</p><p id="4b47af00-6b64-4fc3-ab12-9132066cd5ab" class="">黑錢勝地 洗錢 how a financial advisor 墮落 money loundry. </p><p id="6994def6-3379-4f3e-98a9-1d3c78cb9ad0" class="">I imagine I am the person who help individuals and companies to meet long-term financial goals</p><p id="b8cebf1a-640e-43ce-92c6-dfdedfb31461" class="">family fund</p><h3 id="d550a0f3-4e08-4949-a848-83557168f277" class="">Why you/now ? (background &amp; personal experience nepal recruitung events)</h3><p id="75919c28-f209-4f67-9f24-1b51c1dbcfeb" class="">單單這樣的背景不夠我前進到world class 級別</p><p id="d1752f35-871a-4522-811d-7c18fe72307d" class="">我覺得一個好的leader要有辦法串起整個團隊，而這就是我的專長，我可以有系統地串連起團隊完成龐大且複雜的任務（equip others to make a meaningful impact）</p><p id="76431b21-ee63-48b6-bc2d-6cd7489e2ef1" class="">my goal as a financial advisor is not only a ... but an educator.</p><p id="6c92eec2-db50-4d15-9d3a-b75463c5e388" class="">校友資源是通往world claass </p><p id="c392eeb6-edd7-4f2d-92c8-1aaa728fd29a" class="">quality life in Rochester</p><p id="d16b61a6-77c8-4165-bafd-0220175c56f0" class="">a chance to be in a world-class company.</p><p id="a35e6d99-ec87-47a8-a17f-00366f18feb6" class="">學校在乎學生，希望能把好的人才留下來</p><p id="855cbe4f-cd68-45ea-a29b-3e07194fa9fd" class="">學校的名聲能夠幫助我找到好工作</p><p id="031eba72-13f6-4906-9166-13aac778cdbb" class="">internship track</p><p id="7768204d-6350-441a-938a-19d9f74b8016" class="">also, one of my family members being faculty in University of Rochester driving me to apply for your school.</p><p id="53fad732-59d0-464d-b29a-3b87eff132c3" class="">
+</p><p id="49e449ac-a350-4909-8099-3fd0d80e9523" class="">做出更好的財務決策 自己的能力有限 加入有能力改善人類生活的大公司 學校的名聲能夠幫助我找到好工作</p><p id="e47eb449-2075-4fba-a37a-728a0c780b6c" class="">solution to policy problem</p><p id="64e01530-222f-42fd-ab29-0d66714e64a9" class="">people face tradeoff </p><p id="b680bd83-0e3e-4a92-ac9f-8d4b4fd82c04" class="">dean: 互動 big family</p><p id="444567d8-78a7-4863-9885-4c06b5dcf081" class="">how to be problem solver<span style="border-bottom:0.05em solid"> how to think humanly how to be ethical and inclusive equitable </span></p><p id="015782ff-9348-4b6b-8ef6-5080d227d9ad" class="">business education is more important than before, because in this time of uncertainty , transformation (technology), need strategic knowledgable principle business leader more than ever. <span style="border-bottom:0.05em solid">Business school value: take unstructured problems or technological advances transform to being able to add value to society as a whole (glue),</span> risk: concentrated too much about crisis attend, not to build a strategic vision while working against the crisis, just think about revenut</p><p id="8f8cd28c-19eb-472f-9273-b93dd3391a68" class="">what we are here for, knowledge, creation and<span style="border-bottom:0.05em solid"> how we can add value to our society,</span> connect alumni (not just getting the diploma)</p><p id="8d0a7c86-aa48-422a-9eab-41f42e128f86" class="">simon not a big school: advantage: quality, every body step up help each other, community feel a great opportunity </p><p id="5ca312ca-f7e2-468b-855b-0a23849833fa" class="">
+</p><p id="4feb71bf-8630-4b65-866a-93a94679c6b0" class="">redistribution of wealth, </p><p id="c28e84d8-9746-439a-b1c1-340c813d2756" class="">
+</p><p id="91d07f44-d138-4a66-84e7-27d4aef95423" class="">
+</p><p id="ea93161d-5348-468b-b4b3-a0b0bdb9fe68" class=""> </p><p id="7b26ef96-9c3a-44be-8062-f27b7274d732" class="">financial advisor</p><p id="21c33d50-8ee2-44d0-9066-09afad957432" class="">succession in nascent stock market (匯集眾人的力量，讓大家的生活變得更好)
+</p><h3 id="cb3796af-485d-4ed2-8320-7e31b3a9efef" class="">long term goal.</h3><p id="36f9227b-d9ac-457b-9023-cffd43cb95b5" class="">
+</p><h3 id="f4d418f6-48c1-4c3f-a0bb-bc03a0131aa7" class="">Bill Gates Foundation</h3><p id="fd335ecd-8062-46aa-8bf6-7895cc8f8625" class="">To expand access to digital financial services so the poorest people around the globe can build security and prosperity for themselves, their families, and their communities.</p><p id="69809ccc-07cb-4504-a32d-9872d85f0122" class="">In just the past six years, 1.2 billion people worldwide have gained access to bank and mobile money accounts.1 <span style="border-bottom:0.05em solid">This revolution in financial inclusion has the potential to offer a pathway out of poverty for hundreds of millions of people and to spur broad economic growth</span>. expand the availability of affordable and reliable financial services that serve the needs of all,</p><p id="127ffa97-0554-42e9-aa6e-07716320ace6" class="">millions of people remain<span style="border-bottom:0.05em solid"> trapped in a cycle of poverty that is difficult to escape</span>, <span style="border-bottom:0.05em solid">financial exclusion is a significant driver of this cycle.</span></p><blockquote id="4e5e78ac-8798-46fe-94c7-8422fce989db" class="">Most poor households still operate almost entirely through a cash economy. This means they have to save using physical assets, such as livestock or jewelry. Cash gets spent, animals die, and jewelry can be lost or stolen. What’s more, these forms of savings earn no interest and can actually lose value over time.</blockquote><p id="892a47e1-ebfb-4f93-b823-730dd2a15566" class="">senior financial advisor</p><p id="89b2e556-5a6a-477a-a2ef-31fd114d8a41" class="">
+</p></div></article></body></html>

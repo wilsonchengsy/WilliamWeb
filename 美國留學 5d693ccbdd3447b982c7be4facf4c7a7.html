@@ -1,0 +1,689 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>美國留學</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="5d693ccb-dd34-47b9-82c7-be4facf4c7a7" class="page sans"><header><h1 class="page-title">美國留學</h1></header><div class="page-body"><figure id="ba3fb1b5-945b-4310-9ec5-f504b507edb5" class="link-to-page"><a href="%E7%BE%8E%E5%9C%8B%E7%95%99%E5%AD%B8%205d693ccbdd3447b982c7be4facf4c7a7/Task%20List%20ba3fb1b5945b43109ec5f504b507edb5.html"><span class="icon">✔️</span>Task List</a></figure><figure id="d9d28fa2-d331-42ff-b603-6477900ea109" class="link-to-page"><a href="%E7%BE%8E%E5%9C%8B%E7%95%99%E5%AD%B8%205d693ccbdd3447b982c7be4facf4c7a7/Housing%20d9d28fa2d33142ffb6036477900ea109.html">Housing</a></figure><div id="164ed9c2-c5e9-4003-9305-fb8d1da7944d" class="column-list"><div id="f5c5decb-e426-4ad4-b9d1-f1dd1d390464" style="width:50%" class="column"><h2 id="480cbe00-194b-45e9-833e-c6f4029b5075" class="">備審資料</h2><figure id="6dcd7175-9b26-495d-aeea-d3934fe453ed" class="link-to-page"><a href="%E7%BE%8E%E5%9C%8B%E7%95%99%E5%AD%B8%205d693ccbdd3447b982c7be4facf4c7a7/Personal%20Statement%206dcd71759b26495daeead3934fe453ed.html"> Personal Statement</a></figure><figure id="17733bb0-9dcb-4594-b86e-6ea6d535ef96" class="link-to-page"><a href="%E7%BE%8E%E5%9C%8B%E7%95%99%E5%AD%B8%205d693ccbdd3447b982c7be4facf4c7a7/%E6%8E%A8%E8%96%A6%E4%BF%A1%2017733bb09dcb4594b86e6ea6d535ef96.html">推薦信</a></figure><figure id="970b4f5b-23cb-4dcb-9e6f-9c3ddc3ea9cd" class="link-to-page"><a href="%E7%BE%8E%E5%9C%8B%E7%95%99%E5%AD%B8%205d693ccbdd3447b982c7be4facf4c7a7/CV%20970b4f5b23cb4dcb9e6f9c3ddc3ea9cd.html">CV</a></figure></div><div id="b3f91408-f479-4c38-a8d3-152e46391ae5" style="width:50%" class="column"><h2 id="bd77dd78-7823-4978-99aa-791adee57f1a" class="">可用資源</h2><figure id="4e010e0f-c73c-4b22-8669-0a7c5d40d40d" class="link-to-page"><a href="%E7%BE%8E%E5%9C%8B%E7%95%99%E5%AD%B8%205d693ccbdd3447b982c7be4facf4c7a7/About%20School%204e010e0fc73c4b2286690a7c5d40d40d.html"><span class="icon">🏫</span>About School</a></figure><figure id="5157b432-390f-4222-99ee-bb4c068390ed" class="link-to-page"><a href="%E7%BE%8E%E5%9C%8B%E7%95%99%E5%AD%B8%205d693ccbdd3447b982c7be4facf4c7a7/Finchance%E6%BC%94%E8%AC%9B%200525%205157b432390f422299eebb4c068390ed.html">Finchance演講 0525</a></figure><figure id="e1b78dc4-a83d-45e2-a311-3ee51e209de1" class="link-to-page"><a href="%E7%BE%8E%E5%9C%8B%E7%95%99%E5%AD%B8%205d693ccbdd3447b982c7be4facf4c7a7/cv%20%E6%96%B0%E8%81%9E%E7%BF%BB%E8%AD%AF%20e1b78dc4a83d45e2a3113ee51e209de1.html">cv 新聞翻譯</a></figure></div></div><figure id="6cf57fd9-3a5d-43ae-94ad-eda169aa7af1"><a href="https://www.signupgenius.com/college/interview-questions-to-expect.cfm" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">40 College Interview Questions Students Should Expect</div><div class="bookmark-description">The college interview gives potential students a chance to make a good first impression with an admissions counselor or alumni member - and can be an important part of the admissions process. Prepare by browsing these 40 questions you&#x27;re likely to get asked - and get tips for how to approach your answers.</div></div><div class="bookmark-href"><img src="https://www.signupgenius.com/favicon.ico" class="icon bookmark-icon"/>https://www.signupgenius.com/college/interview-questions-to-expect.cfm</div></div><img src="https://www.signupgenius.com/cms/socialMediaImages/college-interview-questions-students-should-expect-article-1200x800.jpg" class="bookmark-image"/></a></figure><figure id="78dba08b-795c-47c3-894e-b9dbd1b58d72"><a href="https://www.indeed.com/career-advice/interviewing/graduate-school-interview-questions" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">10 Graduate School Interview Questions (With Sample Answers)</div><div class="bookmark-description">Career Guide Interviewing 10 Graduate School Interview Questions (With Sample Answers) This article has been approved by an Indeed Career Coach Many graduate schools require an interview as part of the application process. Graduate school interviews allow university staff to evaluate your potential to succeed in their program.</div></div><div class="bookmark-href"><img src="https://images.ctfassets.net/pdf29us7flmy/289vCHeR8VihSh6eqiStxK/0d4ad61e921b5509de060d93c736c466/favicon.png?w=192" class="icon bookmark-icon"/>https://www.indeed.com/career-advice/interviewing/graduate-school-interview-questions</div></div></a></figure><h2 id="ed97bc17-003b-48a6-be0e-bb378579001d" class="">Nepal </h2><ul id="b8b69616-d4d3-4cbe-a071-5d0d460c6340" class="bulleted-list"><li style="list-style-type:disc">provide after-school tutoring for local students </li></ul><ul id="7fc43a66-a154-4fe6-9c34-244ce962f95a" class="bulleted-list"><li style="list-style-type:disc">build connection with local community </li></ul><ul id="46039ac0-bfb0-4648-a960-7a9bc51e49d6" class="bulleted-list"><li style="list-style-type:disc">manage the schedule and the site that we provide medical services </li></ul><ul id="0040bbef-efd8-4fe3-a0b5-415cd2a61ce4" class="bulleted-list"><li style="list-style-type:disc">public speech raise fundings from government </li></ul><ul id="ad92d855-cbf0-40f0-a110-7a9115f03907" class="bulleted-list"><li style="list-style-type:disc">work with people in different fields, from different culture </li></ul><ul id="1eae60eb-41a8-46bb-a9fa-a434db0e3ee1" class="bulleted-list"><li style="list-style-type:disc">站在當地人的教度看代社會議題 (understanding social problems from a local perspective)</li></ul><ul id="bd1fa4a2-dde3-4a2f-b6ca-398b3954b67b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">learn to make better decisions, learn to implement better solution, make contribution to environmental and social changes, learn how to work with people from different culture, learn to adapt to a brand new environment </mark></li></ul><p id="b543901b-c28f-49df-b545-0dc1b9104954" class="">
+</p><p id="a414dc94-b090-45c1-9c34-888101984a45" class=""> increasing financial literacy, minimizing financial instability </p><p id="6b861fa0-35a5-4cdb-863e-556d75f99054" class="">coming from their culture, I learned how to solve social problems from local perspectives </p><p id="6ebd51ad-3825-4158-9c23-22d333bd5b60" class="">cultivate my empathy to a wide variety of people, motivate me to create a positive impact to the world </p><h2 id="bd090cde-6ad2-4fc6-96af-c3801eb89ada" class="">campus recruiting</h2><ul id="fbde6ce2-d682-44cd-8e24-dec838cb88d1" class="bulleted-list"><li style="list-style-type:disc">organize career fair and career </li></ul><ul id="e4b7a7e0-bb97-4b0f-a0c0-134461e97780" class="bulleted-list"><li style="list-style-type:disc">connect different parties: school (venue), government (funding), students (activities that attract students), design 宣傳品 主視覺, 吸引企業 (corporates )</li></ul><ul id="80a7d026-ebf0-425c-a41c-edf951c1d0f3" class="bulleted-list"><li style="list-style-type:disc">overcome obstacles (virtual career fair)</li></ul><ul id="26d4ec1b-4c1a-4bf8-ad6b-7394efee3724" class="bulleted-list"><li style="list-style-type:disc">learn to be a well-rounded decision maker, learn better communication skills, </li></ul><p id="bdfbc03b-7664-4060-abaf-70759821a789" class="">
+</p><ul id="a2b010a2-0dc4-4634-88e4-5986c1250dd8" class="bulleted-list"><li style="list-style-type:disc">I cannot complete such a complex work on my own, we can finish the job as a whole.</li></ul><ul id="efcf3760-d7f2-4caf-915b-37a742fb1409" class="bulleted-list"><li style="list-style-type:disc">to see what we can achieve</li></ul><ul id="e1460995-aba8-4ec3-9c7b-e0c1e654e867" class="bulleted-list"><li style="list-style-type:disc">每個人在微不足道的事上努力，匯聚強大的力量</li></ul><h3 id="7a3387fc-9cee-45de-9499-057345b91c67" class="">basketball </h3><p id="7deacbb3-6640-460c-a10a-ce417e24bb34" class="">
+</p><p id="33b2404f-99ac-4240-bec2-b2f30bc7fb8f" class="">
+</p><p id="06dc1f4c-5949-454c-9d18-2d3382d5415c" class="">
+</p><p id="58b74e14-76c0-45e9-80c7-d9bbee5c7da2" class="">
+</p><h3 id="061b9bb3-a5f0-47c8-8817-868a3d6261cb" class="">what I learn from school</h3><ul id="73b8a7bb-759c-4ae0-800c-bc016c63995c" class="bulleted-list"><li style="list-style-type:disc">build connection</li></ul><ul id="78d95eb7-f232-4f84-8996-0eff2a7c7d0f" class="bulleted-list"><li style="list-style-type:disc">cultivate leadership skills</li></ul><ul id="2a7448ff-e04e-4f30-93ea-8b37643380e0" class="bulleted-list"><li style="list-style-type:disc">learn to communicate...</li></ul><h2 id="6ded579b-f169-4017-beac-74824a453a1d" class="">teamwork</h2><figure id="a34e68da-85f0-458f-91ee-3e8f014d9717"><a href="https://www.thebalancecareers.com/job-interview-question-give-some-examples-of-teamwork-2061285" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Tips for Sharing Examples of Teamwork at an Interview</div><div class="bookmark-description">There are few jobs that can be done in isolation. This means that a person in any role-from an entry-level assistant to a retail worker to management-level employees-needs to be able to collaborate productively with others. Therefore, expect job interview questions about teamwork when interviewing for almost any job.</div></div><div class="bookmark-href"><img src="https://www.thebalancecareers.com/favicon.ico" class="icon bookmark-icon"/>https://www.thebalancecareers.com/job-interview-question-give-some-examples-of-teamwork-2061285</div></div><img src="https://www.thebalancecareers.com/thmb/6OIVIMu6QtQGt3St8YR80KDWYIw=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/attentive-financial-advisor-talks-with-male-client-1305552368-ee4fd53adf6846809e53773af89ec535.jpg" class="bookmark-image"/></a></figure><figure id="ce5d5b11-3561-4d87-b92d-b4c4e6424b73"><a href="https://www.quora.com/Can-you-describe-your-experience-working-in-a-team-environment-and-your-teamwork-skills" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Can you describe your experience working in a team environment and your teamwork skills?</div><div class="bookmark-description">Answer (1 of 4): Yes,i can because i have experienced the team work environment in my BS and it was little bit difficult for me to handle such a big group and take everybody with me in group work the very first thing which you have to do is to arrange the members in your group ,split the topic of...</div></div><div class="bookmark-href"><img src="https://qsf.fs.quoracdn.net/-4-images.favicon.ico-26-ebf6a9e7f7b4576d.ico" class="icon bookmark-icon"/>https://www.quora.com/Can-you-describe-your-experience-working-in-a-team-environment-and-your-teamwork-skills</div></div><img src="https://qph.fs.quoracdn.net/main-custom-t-2038-600x315-cvlodkzhifuzlaiovyaricedwqfawgfs.jpeg" class="bookmark-image"/></a></figure><ul id="26dc7bd2-9cf1-4478-976e-3b3537b9bd45" class="toggle"><li><details open=""><summary>basketball</summary><ul id="59c43a6e-20a2-4e4d-b965-d76cd844ede9" class="bulleted-list"><li style="list-style-type:disc">As vice captain of our basketball team </li></ul></details></li></ul><p id="4b491209-5310-4acb-a8a5-07291d4f5ff0" class="">
+</p><p id="b8068837-2575-497a-bd6b-e826e7cb4f5e" class="">
+</p><h2 id="6a2fba07-f663-459d-b9b1-78fdcf082a5a" class="">problem solving</h2><figure id="5e871be2-00c4-48d1-85ba-ee9ad9d1fa95"><a href="https://www.thebalancecareers.com/problem-solving-interview-questions-and-answers-5083660" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">How to Answer Problem-Solving Interview Questions</div><div class="bookmark-description">Depending upon your industry, you may be asked to answer problem-solving questions at some point during your interview with a hiring manager. These questions are common in IT, engineering, and other technical sectors where strong data analysis and problem-solving competencies are essential.</div></div><div class="bookmark-href"><img src="https://www.thebalancecareers.com/favicon.ico" class="icon bookmark-icon"/>https://www.thebalancecareers.com/problem-solving-interview-questions-and-answers-5083660</div></div><img src="https://www.thebalancecareers.com/thmb/aX0HA29CTNFwMA6aw8tN8ncVTQs=/2121x1414/filters:fill(auto,1)/GettyImages-1169112139-21852d3251e447389087c773a2f6a72c.jpg" class="bookmark-image"/></a></figure><p id="9f18687b-14b0-490b-9b32-46b0d665e1d4" class="">what is the problem </p><p id="983a0951-39ba-4128-858a-23d40e6be342" class="">should I solve it now? </p><p id="7c9067e8-3a89-4011-b6e3-6533cb7fa17a" class="">how to solve it? (most efficient way)</p><p id="8137423a-852c-46f9-9f1e-d5774b6c8088" class="">how to prevent this kind of problem happening again?</p><p id="c8b4f162-4829-40fb-9da1-58fc2f44d90f" class="">
+</p><p id="f69cffdb-bd50-495d-85a4-611ea2bee0cc" class="">
+</p><h2 id="23b1b040-757d-4fb0-b427-5f722f8b2446" class="">management</h2><figure id="519d21f5-8893-4f33-9ec0-f91da53ee5e3"><a href="https://www.thebalancecareers.com/manager-interview-questions-and-best-answers-2061211" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Answers to Key Interview Questions for Management Positions</div><div class="bookmark-description">If you&#x27;re preparing for an interview for a manager position, you have obviously interviewed successfully in the past. However, even with your experience, it can be helpful to review interview questions and answers for manager candidates. Beyond that, you might want to go over interview success techniques to improve your chances of landing the job.</div></div><div class="bookmark-href"><img src="https://www.thebalancecareers.com/favicon.ico" class="icon bookmark-icon"/>https://www.thebalancecareers.com/manager-interview-questions-and-best-answers-2061211</div></div><img src="https://www.thebalancecareers.com/thmb/jIqMNnaZV3RUWEqLddrI02rT31Q=/1500x1000/filters:fill(auto,1)/manager-interview-questions-and-best-answers-2061211-v3-d3fd726ca0d04085b6db6c0ec2d68033.png" class="bookmark-image"/></a></figure><p id="36b1db3f-9d25-4f09-80f8-9e6e77b62895" class="">
+</p><h3 id="27960f1c-9126-43c6-a87b-5813b41c8413" class="">time management</h3><figure id="f01cb4ff-9b53-4b61-8d27-825314c3d230"><a href="https://www.thebalancecareers.com/time-management-interview-questions-2061286" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">How to Answer Interview Questions About Time Management</div><div class="bookmark-description">When you&#x27;re interviewing for a role, it&#x27;s very common to get asked questions about time management. Being able to schedule and manage your time, and prioritize work appropriately, is an important skill in nearly any role, in every industry. Get insight into the best ways to respond to questions about time management.</div></div><div class="bookmark-href"><img src="https://www.thebalancecareers.com/favicon.ico" class="icon bookmark-icon"/>https://www.thebalancecareers.com/time-management-interview-questions-2061286</div></div><img src="https://www.thebalancecareers.com/thmb/vNApkWQrgDNY1nAINkU4FL19XOM=/3885x2565/filters:fill(auto,1)/using-a-day-planner-BU006460-58e0fb765f9b58ef7ef618b3.jpg" class="bookmark-image"/></a></figure><h3 id="5e357383-96ee-40bf-ba1a-804b688e75f7" class="">leadership, teamwork </h3><figure id="e1ace711-15ef-4d48-ba0e-ed5b9e550eb0"><a href="https://www.indeed.com/career-advice/career-development/leadership-qualities-that-make-a-great-leader" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">20 Qualities of a Great Leader (With Tips)</div><div class="bookmark-description">Career Guide Career Development 20 Qualities of a Great Leader (With Tips) Erin Wike is a career coach and lecturer at The University of Texas at Austin and owner of Cafe Con Resume.</div></div><div class="bookmark-href"><img src="https://images.ctfassets.net/pdf29us7flmy/289vCHeR8VihSh6eqiStxK/0d4ad61e921b5509de060d93c736c466/favicon.png?w=192" class="icon bookmark-icon"/>https://www.indeed.com/career-advice/career-development/leadership-qualities-that-make-a-great-leader</div></div><img src="https://dpuk71x9wlmkf.cloudfront.net/assets/2019/01/30204756/15-Leadership-Qualities-That-Make-a-Great-Leader-FINAL-02.jpg" class="bookmark-image"/></a></figure><ul id="4883715b-3575-4255-810e-28bc481b2975" class="bulleted-list"><li style="list-style-type:disc">connect everyone </li></ul><ul id="5dfc7460-baa1-424e-80a2-f2b2f0364565" class="bulleted-list"><li style="list-style-type:disc">be a good listener </li></ul><ul id="e18e6c09-6581-4d13-9067-0acf886983ba" class="bulleted-list"><li style="list-style-type:disc">it is easier to get the job done if we all have the same goal (obstacle)</li></ul><ul id="17f5b5bd-8f11-4fbf-8b29-463c951b7403" class="bulleted-list"><li style="list-style-type:disc">recognizing and appreciating each team member&#x27;s strength or talent (not good at public relation ⇒ do design work)</li></ul><ul id="a74a0cb5-6b15-48ea-bc0e-46314a0b9acb" class="bulleted-list"><li style="list-style-type:disc">more importantly, learning to be a good leader is a also good chance for me to try different things, to build connections, to explore myself </li></ul><ul id="d0846c2e-2678-424d-8f25-ed88680fd063" class="bulleted-list"><li style="list-style-type:disc">being a leader does not necessarily mean better capacity, being a leader only represent that you burden a greater responsibility </li></ul><ul id="516b70b9-3131-4c24-9ae9-237661eb932f" class="bulleted-list"><li style="list-style-type:disc">I enjoy the feelings that all of us strive for the same goal, and the process also fulfill me with the sense of achievement </li></ul><ul id="bc7a5537-34d5-4964-9f38-056ffbadfeaf" class="bulleted-list"><li style="list-style-type:disc">treat everyone </li></ul><p id="748f639e-ba2b-430e-9e4d-672db63c524a" class="">
+</p><h3 id="2d589d1e-96d6-42d9-905d-b6457092226e" class="">analytical thinking </h3><figure id="f8f2ce93-cfbd-4b62-985a-036f63b747c7"><a href="https://www.indeed.com/career-advice/resumes-cover-letters/analytical-skills" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Analytical Skills: Definitions and Examples</div><div class="bookmark-description">Career Guide Resumes &amp; Cover Letters Analytical Skills: Definitions and Examples Key takeaways: Analytical skills are soft skills that help you identify and solve complex problems. Some popular analytical skills include critical thinking, data analysis, research and communication. Demonstrating analytical skills on your resume and interviews can help you be a competitive job candidate.</div></div><div class="bookmark-href"><img src="https://images.ctfassets.net/pdf29us7flmy/289vCHeR8VihSh6eqiStxK/0d4ad61e921b5509de060d93c736c466/favicon.png?w=192" class="icon bookmark-icon"/>https://www.indeed.com/career-advice/resumes-cover-letters/analytical-skills</div></div><img src="https://dpuk71x9wlmkf.cloudfront.net/assets/2019/02/07205820/Social.jpg" class="bookmark-image"/></a></figure><p id="604fa950-c779-4d8b-b66e-70fdf35c6da3" class="">Analyzing a subject means that you’ve cultivated an in-depth understanding of it and are able to speak to it with some level of expertise.</p><p id="129b693b-5e39-4b29-9eba-e59f278205ff" class="">Most analytical thinking requires trial and error. Those with strong analytical thinking skills are often capable of quickly analyzing a situation, topic or problem, and often work well in a team setting to accomplish goals.</p><ol type="1" id="972f0434-57af-4ac6-8bf9-895b040d1a46" class="numbered-list" start="1"><li>Identifying a topic, problem or issue</li></ol><ol type="1" id="58d99d7a-291c-493f-82d4-c8058926c6f8" class="numbered-list" start="2"><li>Gathering information through testing and observation</li></ol><ol type="1" id="0b55fa9c-55bb-43cb-b0a1-b41b755aa789" class="numbered-list" start="3"><li>Developing solutions or deepening your understanding of the topic</li></ol><ol type="1" id="c745a7ff-5e62-436c-8b33-3e7eba58dc27" class="numbered-list" start="4"><li>Testing solutions or new ideas based on what you’ve learned</li></ol><ol type="1" id="31ab5f15-7544-4401-befe-3daac588d4ed" class="numbered-list" start="5"><li>Post-analysis, or reviewing what solutions worked, to assess and apply your new knowledge</li></ol><p id="83a2d12f-5257-46b2-ae20-8de1bca1b8b8" class="">A key element to analytical thinking is the ability to quickly identify cause and effect relationships. This means understanding what might happen during the problem-solving process, for example, and examining how new ideas relate to the original topic.</p><p id="acd994a0-0cd3-4468-a46f-0c4b6d9d041a" class="">Using analytical skills in your everyday work shows you’re a reliable and pragmatic thinker, able to base your decisions on meaningful data. For example, you have a limited amount of time to spend on work each day. Deciding how to spend your time in a way that will make an impact for your business can quickly make you a valued and indispensable team member. You can use your analytical skills to determine which tasks will help you make the most progress towards your goals.</p><p id="4c44f04e-e8b4-44fe-ad31-786da4a8eb90" class="">
+</p><p id="6f980f93-8c0b-43c3-be77-075b3a59ac10" class="">投資：需要先解決嗎？接下來如何解決，哪些是我覺得最有潛力的公司</p><h3 id="5aba576a-fa42-4d2d-8f3d-1cab6f01f369" class="">diversity </h3><figure id="f4618436-24ac-41d6-8010-37155fd0a3ac"><a href="https://blog.accepted.com/writing-the-diversity-essay/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">7 Simple Steps to Writing an Excellent Diversity Essay</div><div class="bookmark-description">What is the diversity question in a school application, and more importantly, why does it matter when applying to leading programs and universities? A diversity essay is an essay that encourages applicants with minority backgrounds, unusual education, distinctive experience, or unique family histories to write about how these elements will contribute to the diversity of their target school&#x27;s class and community.</div></div><div class="bookmark-href"><img src="https://kp15446gcoz47p1vpn9ol6gj-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/favicon.ico" class="icon bookmark-icon"/>https://blog.accepted.com/writing-the-diversity-essay/</div></div><img src="https://blog.accepted.com/wp-content/uploads/2018/11/What-is-the-diverstiy-essay-question-and-how-do-you-answer-it.jpg" class="bookmark-image"/></a></figure><figure id="1b83bb4f-b7b3-4737-be8f-81f704d8a89e"><a href="https://blog.accepted.com/different-dimensions-diversity-episode-193/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Different Dimensions of Diversity [Episode 193]</div><div class="bookmark-description">In reviewing our stats for last year, I noticed that one of our most visited pages is an article on writing about diversity. That&#x27;s not shocking since Accepted&#x27;s consultants are frequently asked by stressed, panicked clients from well-represented groups in the applicant pool, &quot;How can I answer this diversity question?!?!&quot;</div></div><div class="bookmark-href"><img src="https://kp15446gcoz47p1vpn9ol6gj-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/favicon.ico" class="icon bookmark-icon"/>https://blog.accepted.com/different-dimensions-diversity-episode-193/</div></div><img src="https://blog.accepted.com/wp-content/uploads/2017/08/different_dimensions_of_diversity.png" class="bookmark-image"/></a></figure><figure id="58a21f1c-9a6b-48ad-b9f0-dac24c033383"><a href="https://www.insidehighered.com/advice/2016/06/10/how-write-effective-diversity-statement-essay" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">How to write an effective diversity statement (essay)</div><div class="bookmark-description">Faculty job postings are increasingly asking for diversity statements, in addition to research and teaching statements. According to the University of California at San Diego website, &quot;the purpose of the statement is to identify candidates who have professional skills, experience and/or willingness to engage in activities that would enhance campus diversity and equity efforts &quot; (emphasis added).</div></div><div class="bookmark-href"><img src="https://www.insidehighered.com/sites/all/themes/ihecustom/favicon.ico" class="icon bookmark-icon"/>https://www.insidehighered.com/advice/2016/06/10/how-write-effective-diversity-statement-essay</div></div><img src="https://www.insidehighered.com/sites/default/server_files/media/conditionally%20accepted_6.jpg" class="bookmark-image"/></a></figure><figure id="34637920-baa0-4d1a-9f42-d6006ce76a34"><a href="https://www.timeshighereducation.com/campus/diversity-statements-what-avoid-and-what-include" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Diversity statements: what to avoid and what to include</div><div class="bookmark-description">Search committees at colleges and universities increasingly require candidates applying for faculty or leadership positions to submit diversity statements. And in the post-Covid online world, where interviews are truncated at best, we are increasingly reliant on applicants&#x27; written materials. Universities across the US are now considering making diversity statements required for all faculty.</div></div><div class="bookmark-href"><img src="https://www.timeshighereducation.com/sites/default/themes/custom/the_responsive/favicon.ico" class="icon bookmark-icon"/>https://www.timeshighereducation.com/campus/diversity-statements-what-avoid-and-what-include</div></div><img src="https://timeshighereducation.com/campus/sites/default/files/2021-03/Diversity%20statements.jpg" class="bookmark-image"/></a></figure><p id="3959e174-1520-4e7c-b414-952969a65a6d" class="">
+</p><h3 id="62fc25ba-9436-4836-a7fd-45a07d2dab31" class="">innovation</h3><figure id="0d651978-823c-4467-a98e-979badadbc6a"><a href="https://www.indeed.com/career-advice/career-development/innovation-skills" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Innovation Skills: Definition and Examples</div><div class="bookmark-description">Career Guide Career Development Innovation Skills: Definition and Examples Innovation is the ability to generate ideas that create value and improve processes, from inventing a machine to finding a faster route to work. Having innovation skills is an asset in the workplace because they enable you to solve problems and advance knowledge in your field.</div></div><div class="bookmark-href"><img src="https://images.ctfassets.net/pdf29us7flmy/289vCHeR8VihSh6eqiStxK/0d4ad61e921b5509de060d93c736c466/favicon.png?w=192" class="icon bookmark-icon"/>https://www.indeed.com/career-advice/career-development/innovation-skills</div></div></a></figure><p id="40102bb8-d709-472e-b2a2-adf19cf66ef8" class="">
+</p><p id="7a30ed8e-13c8-4250-b14a-9a5eb78b79a0" class=""><strong>Contribute during meetings.</strong> Speak up when you have an idea about how to improve a project. Voicing your opinion during meetings develops your confidence and gives you the opportunity to implement your creative ideas.</p><p id="afb7affb-a259-4542-9a86-655f0afc2664" class=""><strong>Research industry trends.</strong> Stay informed about developments in your field by reading journals and attending conferences. Learning about other innovations in your field can help you predict upcoming trends and adopt new technology in your work.</p><p id="3ce63971-dad1-4730-b5f8-10d73b62aca1" class=""><strong>Experiment with new ideas.</strong> When you have a new idea, find ways to test it and measure the outcome. Conducting experiments and trial runs can help you refine your ideas before large-scale implementation.</p><p id="c95134f5-918d-467a-80e2-40f4e17601eb" class=""><strong>Change your work environment.</strong> Adjusting your surroundings can encourage your creativity. Alternate where you work or make modifications to your workspace to inspire new ways of thinking.</p><p id="77a40e30-c1af-432f-9b79-44f26872e3ce" class=""><strong>Collaborate with colleagues.</strong> Working together with others can improve productivity during brainstorming sessions. Find collaborators who can share feedback about your ideas and develop a creative environment.</p><p id="16026383-7331-4b98-9992-139ed76f8dd2" class=""><strong>Collect data.</strong> Gather information about current workplace processes and track how changes in the workplace impact productivity. Understanding the results of different techniques can help you recognize patterns and select the best methods for future projects.</p><h3 id="80fe0705-550d-4903-b3d8-4d16f309e04a" class="">making changes</h3><figure id="217ea7d2-5b46-4404-81f4-a1269e2fde63"><a href="https://www.waldenu.edu/why-walden/social-change/resource/four-small-ways-to-make-a-big-social-change-impact" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">four-small-ways-to-make-a-big-social-change-impact</div><div class="bookmark-description">There are many small things anyone can do to make a big social change. Whether it is a random act of kindness, supporting socially conscious businesses, or volunteering in your community, they can go a long way to creating positive social change.</div></div><div class="bookmark-href"><img src="https://www.waldenu.edu/favicon.ico" class="icon bookmark-icon"/>https://www.waldenu.edu/why-walden/social-change/resource/four-small-ways-to-make-a-big-social-change-impact</div></div><img src="https://www.waldenu.edu/-/media/walden/images/seo-article/seo-1354-bs-volunteering-problem-cheerful-243564697-1200x675.jpg?rev=23f5d9374b31449e996f15bc3c39db07&amp;hash=9CEBF40BECF48B055D008F1A88CEFA27" class="bookmark-image"/></a></figure><h3 id="667a4d18-3e40-4b45-945b-a86d2ae934fd" class="">價值觀不同</h3><p id="e980b3e2-6924-45a7-8412-fee88704ec92" class="">&quot;<strong><mark class="highlight-red">An investment in your future is one of the best investments you can make, and a Simon MS degree will open doors to new career opportunities.&quot;</mark></strong></p><p id="b596162c-8421-4f1c-ada9-c300fe977c43" class="">while some people put emphasis on the amount of money they spent, I put emphasis on whether the investment can lead me to a better future </p><p id="c0f7e367-366a-47b5-ab47-1b67032fdc29" class="">
+</p><h3 id="ee9386e9-3085-4c61-ae1e-c1733b863d63" class="">solve conflicts </h3><figure id="d47779cc-3af7-4083-adfe-ee85ddb7963a"><a href="https://www.hrcloud.com/blog/7-tips-on-how-to-manage-and-resolve-conflict-in-the-workplace" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">7 Strategies on How to Resolve Conflict In The Workplace | HR Cloud</div><div class="bookmark-description">Conflict is not a strange thing for people. Human beings experience it in their day-to-day lives - with their friends, families, and more so their professional lives. In the workplace, conflict causes a massive degree of frustration, pain, discomfort, sadness, as well as anger. It is a normal life aspect.</div></div><div class="bookmark-href"><img src="https://www.hrcloud.com/hubfs/180x180.png" class="icon bookmark-icon"/>https://www.hrcloud.com/blog/7-tips-on-how-to-manage-and-resolve-conflict-in-the-workplace</div></div><img src="https://www.hrcloud.com/hubfs/Group%2040-1.png#keepProtocol" class="bookmark-image"/></a></figure><h3 id="f3899ca9-a2d3-44b4-9746-19f6fb7ac9b1" class="">goal</h3><ul id="d54bd9d2-0ed2-4785-84f2-cffe533d40c9" class="bulleted-list"><li style="list-style-type:disc">as long as I still alive, I&#x27;ll still be helping people to make better financial decision, because I believe that finance is vital stepping stone for a brighter future, and it is what I am good at</li></ul><ul id="9b20aefe-ad1e-46e5-9e99-6a7dc81acf05" class="bulleted-list"><li style="list-style-type:disc">選校就像投資機會，如果只能投資一個，投資會來回報最多的 (which I believe can best lead me to a brighter future)</li></ul><p id="45c3ef61-612d-4aec-87f6-fa60fbb41cdb" class="">
+</p><h3 id="e40b1996-56e0-4566-8b75-ae12e58f8c8e" class="">labor market insight 有不同職缺介紹</h3><figure id="8bf79be8-239d-4594-9bce-25e8d40a0174"><a href="https://career.wpcarey.asu.edu/channels/masters-in-finance/#uc_organizations-4" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Finance (MS-FIN) - Career Management and Employer Engagement | Arizona State University W. P. Carey School of Business</div><div class="bookmark-description">The Specialized Masters&#x27; Alumni panel video has launched! Hear from recent alumni as they share their tips for career success and steps to take early on in your program to secure a job post-graduation. View the newly launched SM Alumni Panel in your Core Career Content Canvas Course Now W.</div></div><div class="bookmark-href"><img src="https://cdn.uconnectlabs.com/wp-content/themes/uConnect_ASU_WPCarey/favicon.ico?v=4.743.1.006" class="icon bookmark-icon"/>https://career.wpcarey.asu.edu/channels/masters-in-finance/#uc_organizations-4</div></div><img src="https://cdn.uconnectlabs.com/wp-content/themes/uConnect_ASU_WPCarey/images/default-og-image.png?v=4.743.1.006" class="bookmark-image"/></a></figure><p id="4f63a4a3-2247-498e-825d-5aeb620c4b76" class="">
+</p><p id="b43a4c52-184d-48dd-a7c8-66151fc41fdb" class="">
+</p><p id="b3ed9668-6831-432d-8c31-6d0bbb6b6e80" class="">
+</p><figure id="3635cd5a-1deb-41f6-bf5a-280904f0fc92"><a href="https://www.forbes.com/sites/brennanbarnard/2020/08/26/why-now-in-college-admission/?sh=2605444a67c9" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Why Now In College Admission?</div><div class="bookmark-description">&quot;Why now?&quot; This is the question that many college-bound students are asking themselves during these challenging times. Why did a global pandemic need to strike at this stage of their schooling and planning for the future? College visits voided, sports spoiled, extracurriculars eliminated, internships impossible, employment eradicated, camps canceled, and opportunities obliterated.</div></div><div class="bookmark-href"><img src="https://i.forbesimg.com/48X48-F.png" class="icon bookmark-icon"/>https://www.forbes.com/sites/brennanbarnard/2020/08/26/why-now-in-college-admission/?sh=2605444a67c9</div></div><img src="https://imageio.forbes.com/specials-images/imageserve/5f45a2262a66d493467fa9b8/0x0.jpg?format=jpg&amp;width=1200&amp;fit=bounds" class="bookmark-image"/></a></figure></div></article></body></html>
