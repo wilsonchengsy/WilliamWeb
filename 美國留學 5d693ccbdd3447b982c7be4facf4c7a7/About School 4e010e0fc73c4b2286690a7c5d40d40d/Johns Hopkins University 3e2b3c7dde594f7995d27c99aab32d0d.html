@@ -1,0 +1,691 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Johns Hopkins University</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3e2b3c7d-de59-4f79-95d2-7c99aab32d0d" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/met_silk_kashan_carpet.jpg" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://yt3.ggpht.com/ytc/AAUvwniquNpsJNU26UKuuibdPkOypOvavk-ALCML4v1wlg=s900-c-k-c0x00ffffff-no-rj"/></div><h1 class="page-title">Johns Hopkins University</h1></header><div class="page-body"><p id="96a8b6d1-7f82-413c-84cc-52679d1e6a59" class="">the mission for business students is to ... </p><p id="397a38fe-1c64-4b74-bbc0-cba9a87be72f" class="">motto: &quot;<a href="https://en.wikipedia.org/wiki/The_truth_will_set_you_free">The truth will set you free</a>&quot;</p><p id="051a25fc-fc9b-4ef7-86b1-1ea6949fd9eb" class="">slogan: Grounded in tradition. Building for the future. Together, we build for what&#x27;s next</p><p id="0a393bdc-4e1b-4ba7-927c-db3a52be5925" class="">At Johns Hopkins Carey Business School, we shape business leaders who seize opportunity, inspire change, and create lasting value.</p><h3 id="2f7557ce-b6d9-4542-871f-dcb2138e79ed" class="">Mission</h3><p id="ed7b799c-69d3-4b4a-9538-418b37d7a6e2" class="">We expand Johns Hopkins University’s pursuit of research, discovery and education through dynamic learning opportunities, innovative faculty, and interdisciplinary collaborations to help shape leaders who seize opportunities to create lasting commercial and societal value.</p><h3 id="7c649cad-86ac-45d9-8fe4-4a5f0c3cf312" class="">Values</h3><h3 id="7d36c3fc-d5ac-4194-8a8f-401c844ee47b" class=""><strong>Relentless Advancement</strong></h3><p id="76a1f44d-289b-46b1-8dd0-3da5aee9bb52" class=""><strong>Challenge the status quo. </strong>Carey builds on Johns Hopkins University’s tireless pursuit of excellence.</p><h3 id="9cd7f354-38a8-4113-b6fa-a8226a9e7b7e" class=""><strong>Boundless Curiosity</strong></h3><p id="e1df2161-e6ab-4210-963d-79e90b57b1ed" class=""><strong>Have a hungry mind, wired for exploration, always seeking, discovering, and innovating. </strong>Carey embraces continuous learning and a constant pursuit of knowledge.</p><h3 id="703c3eb5-b5b1-4343-8a98-07d3e74fca9b" class=""><strong>Unwavering Humanity</strong></h3><p id="da95b21f-aa98-4371-9431-a5380ecb6b4a" class=""><strong>Commit to business with humanity in mind. </strong>Carey advances society and shapes leading citizens.</p><h3 id="815bc578-de93-4537-9c02-6cb913be3448" class=""><strong>Collaborative Leadership</strong></h3><p id="47b4f36a-c63c-4735-afe5-c08cdf8ddf7a" class=""><strong>Foster an inclusive environment. </strong>Carey builds passionate teams across the Johns Hopkins network to develop dynamic business solutions.</p><p id="f76c7074-0d2c-481f-8c5a-8d5476a2d6f1" class="">
+</p><figure id="b673c200-41da-4a4b-9fac-b12776c7676d" class="image"><a href="Johns_Hopkins_University/Untitled.png"><img style="width:816px" src="Johns_Hopkins_University/Untitled.png"/></a></figure><p id="e1167786-cb2e-440e-a36d-1061a9e5b1e5" class="">
+</p><h2 id="bca209f5-bbdb-4492-a7d0-8d13062d9c03" class="">1. How is your future industry evolving and in what ways do you hope to inspire change and create lasting value?</h2><p id="899a7752-18cb-4797-ab9c-9e86d2183922" class="">The financial industry is ever-changing and the development of new technologies is reshaping our society. However, no matter how time evolves, finance will always be a crucial foundation for visionary entrepreneurs or enthusiastic dreamers to attain their passions. My goal to pursue a master’s degree in finance at Carey Business School is to ultimately help individuals and corporations make better financial decisions thus enabling them to achieve their long-term life goals.</p><p id="45654e28-2b8c-43d1-94a9-bc7932446324" class="">I believe that excellent quantitative skills, sufficient knowledge of wealth management and financial modeling, and analytical thinking are timelessly essential tools for making better financial decisions. To better navigate the evolving financial industry, I will keep my mind open and persistently focus on acquiring the knowledge and skills that will lead me to fulfill my ambition. With the <em>Computational Finance</em> course and <em>Big Data Machine Learning</em> course provided by Carey, I hope to familiarize myself with quantitative models for better financial decision-making. Moreover, the real-world case studies in your courses will teach me how to make decisions more efficiently with analysis models. I also intend to take advantage of Carey Business School’s experiential learning opportunities, such as Impact Sprints, to polish my problem-solving skills and put theories into practice. The school’s wide variety of resources will lay the foundation for me to add value to an equally wide variety of societal aspects.</p><p id="954f265b-3e1f-4080-a8e8-0de61ade747d" class="">Apart from staying competitive, I firmly believe that participating in volunteer activities and broadening my horizons are among the best ways to be part of the changes we hope to see. During my undergraduate studies, I had an opportunity to travel to Nepal as a leader of an international medical volunteer group. In addition to medical services, one of our primary goals was to tackle the problems arising from poverty. To aid local people dealing with poverty issues, my partner and I devised a viable method for them to generate steady income. In cooperation with local university students, we created a connection between a local community committee in Jugedi, Nepal, and the Taipei Global Charity Association, a non-profit organization in Taiwan, to ensure that they could earn money from selling their handicrafts to Taiwan. Living among the Nepalis, experiencing their daily lives, and witnessing their extreme poverty, I learned that financial accessibility is a vital stepping stone to education and health. My volunteer work in Nepal not only cultivated my empathy toward a wide variety of people but also motivated me to create a positive impact in the world.</p><p id="ea8d0349-320c-4dba-be02-c4558c4c7066" class="">I value the qualities of altruism, generosity, and kindness. My goal as a specialist in the field of finance is not only to help my clients make better financial decisions but also to educate them on the correct financial concepts. I am a team player with proven experience in building connections between different cultural backgrounds to propel my partners to greater achievements. I believe that I am fully prepared to meet the requirements of your program, and I am immensely excited to become part of Carey’s enriching community.</p><p id="0a685d37-9485-41a4-9731-42007869600c" class="">
+</p><p id="635f8b83-bec2-48c2-ad17-81f5d076ef36" class="">
+</p><p id="611c7fe4-f25f-4779-899c-378dfc33573c" class="block-color-red">Apart from staying competitive, I see humanity the most precious quality that unites we human beings to face future challenges, and I firmly believe that participating in voluntary activities and broadening my horizons are among the best ways to be part of the change<mark class="highlight-red">s</mark> we hope to see. </p><p id="fa115f32-ee1a-449c-83be-83618ccc05ba" class="">focusing on people around as and learn to always remain humanity are the key to </p><p id="dcf5a126-2aba-4fb1-8756-98d4b3ecc929" class="">analytical method </p><p id="e26b93a9-98a1-439a-9eb4-a73275ed344f" class="">We are in the times of uncertainty, the  As a business students </p><p id="f342dbcf-e5ed-4f09-b672-be508b3e9de0" class="">while at the same time remain our humanity </p><p id="e5af2bc5-c955-4b70-8010-0c79aa2e24c1" class="">Response—- then maybe I’ll say 讓自己具有競爭力
+不斷學習 open minded
+Be flexible and observant?</p><p id="6d96831f-bcdb-4ac3-9a17-ce70325207cf" class="">Yes—- 講你想要成為的 然後講學校能幫助訓練你成為
+<mark class="highlight-red">open minded (different cultures/experiences at school)
+and well-equipped with skill sets ( to be able to be flexible and adoptable to the future changes)
+And observant (from learning from peers or something )</mark></p><p id="9ef7e180-2dad-47e3-b9fb-0fe34c744024" class=""><mark class="highlight-red">Your ability to bring people together
+Your curiosity to constantly exploring new things/ideas
+Your discipline in keeping your self as competitive and up-front in all the new development/technology in the field</mark></p><p id="416979a7-9f62-4fce-b113-ac12378e84ac" class="">you hope to instill your own personality and contribute at your best knowledge or something to the field</p><p id="7ba5d2c7-0f1a-4e68-8ef0-8b983b5efc8e" class="">I think you can steal some from this—
+Key is to keep learning
+Genuine desire to…..
+gaining experience
+Focus on “people”
+Learn from people</p><p id="ce47be6d-82ec-4d1b-a34c-87be9e5d9549" class="">learn from other people </p><p id="62e3a3c9-6495-47c6-9916-05d0ddf84f4c" class="">willing to put their time their energy to better themself. </p><p id="8442c02f-a48b-4342-ac53-d68de67554b0" class="">having a dream working to accomplish that dream </p><p id="bdd93be0-3d55-4421-b0d6-71d1cfd01d62" class="">don&#x27;t focus on what you can&#x27;t change, focus on what you can change</p><p id="d9f4f9f0-509c-45bc-a435-89429c8a41b8" class="">keep learning, whats your strength ⇒ need education, need </p><p id="de3046d8-92f9-440d-84ec-746239aa4b93" class="">
+</p><p id="7a6f30ad-8594-4669-8b23-083631a26957" class="">
+</p><p id="c5b33cc6-c718-4d0b-b103-195d6b58c2c3" class="">
+</p><p id="fc6864fe-7975-49dc-a6e3-77fe08ed2e54" class="">take unstructured problems or technological advances transform to being able to add value to society as a whole</p><p id="3d4735fe-d103-46ed-bc88-acb79eace0b0" class="">to expand access to financial service so the poorest people can build their security and prosperity for themselves, their families and there communities.</p><p id="b53cff51-4f01-43a7-ab45-d32813b37759" class="">After four years of undergraduate studies at the university, ? </p><p id="491423ff-00c1-4613-a668-15cb88bc02d4" class="">
+</p><figure id="c6b56346-8833-4aec-a0f7-4509c8e97e68" class="image"><a href="Johns_Hopkins_University/Untitled%201.png"><img style="width:432px" src="Johns_Hopkins_University/Untitled%201.png"/></a></figure><h2 id="a29de7ab-61d9-4271-af9b-bb7c0154e7ad" class="">2. discuss a turning point in your life—an accomplishment, event, or other critical moment - that helped you understand yourself or the world around you in new ways.</h2><p id="6cdc53af-b38e-4216-9521-545770d3ae91" class="">
+</p><p id="70dd0c3d-7b72-4845-a845-5e453ec8ae1e" class="">The very first question that flashed through my mind the day I stepped onto the campus as a first-year student was “what can I take with me except knowledge from books and a piece of diploma after four years of undergraduate studies?” I wanted to utilize every moment to create more valuable times. Therefore, I participated in several extracurricular activities, such as campus recruiting events, an international volunteer group, and an alumni association, to explore more possibilities in my life. These experiences also prepared me to become a more well-rounded decision-maker.</p><p id="225730a1-b6eb-448e-bea1-d965822139fc" class="">During the period I served as the CEO of NCU Campus Recruiting Events, my job was to organize several career fairs and corporate briefings for the school. Among the events we had held, the spring career fair was our major event of the year. We had 25 team members, with 8 months of planning leading up to the event. We prepared documents and delivered presentations to raise funds from the government, checked every tiny detail with 129 attending corporates, and held several marketing campaigns to attract students to participate in our events.</p><p id="3a8048c2-6a57-4e10-a5ed-16866a663f41" class="">However, because of the pandemic outbreak, we were forced to cancel our physical career fair a month before the scheduled date. Although the news was demoralizing, I regarded the obstruction as an invaluable opportunity for our team to create something fresh and innovative. After a three-day discussion, we decided to collaborate with Tempest Digital Ltd., a gaming company founded by NCU alumni, to host the career fair in the form of an online game. We wanted to build a new form of career fair while at the same time containing the core features of physical events. We designed customized cabins for each firm in the game so that the participants can visit different firms on the map and explore recruiting information provided by the firm. More importantly, the participants could not only experience the joy in gaming but also deliver their resume instantly or consult with HRs through webcam directly. Consequently, visitors at the career fair almost doubled the achieved numbers from the previous years, and the number of views had reached 30K within three days. We also achieved an 88% overall satisfaction rate of attending corporates.</p><p id="a7b3b9b1-2f69-4cd3-9ce4-7253edd878f3" class="">The pandemic put many events on hold, but it could never stop anyone from pursuing their goals. The world is constantly changing and so are our plans. I am grateful that these experiences strengthened my will to face the unknown, motivated me to always keep up with the trends of the world, and reminded me to relentlessly improve myself. I am convinced that accumulating knowledge and polishing my skill sets in every aspect are the best ways to adapt to different scenarios and changes. To become a specialist in the field of finance, I see Carey Business School as my best investing opportunity, and I sincerely believe that together we can make meaningful changes and make the world a better place.</p><p id="5d546712-b7d9-4721-87bc-3a0feea324d7" class="">
+</p></div></article></body></html>

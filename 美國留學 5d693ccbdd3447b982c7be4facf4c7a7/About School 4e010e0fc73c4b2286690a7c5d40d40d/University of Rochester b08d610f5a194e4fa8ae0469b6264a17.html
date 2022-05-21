@@ -1,0 +1,690 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>University of Rochester</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="b08d610f-5a19-4e4f-a8ae-0469b6264a17" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/met_william_morris_1878.jpg" style="object-position:center 0%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://media-exp1.licdn.com/dms/image/C560BAQEdwOgZ51YSkg/company-logo_200_200/0/1621256168027?e=2159024400&amp;v=beta&amp;t=Ou1HRr8jttblcSWzDUxFx156kPCSWg6B85g141T3lIc"/></div><h1 class="page-title">University of Rochester</h1></header><div class="page-body"><h1 id="571fa20a-ab53-4c8a-8d8e-0ffe1f80de59" class="">Admission Checklist</h1><ul id="e2bd6460-1a8a-48a1-b925-e6697e732913" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Resume and work history</span></li></ul><ul id="7d77effc-c880-4c4f-a0ab-674e81ac63bd" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Two essay (題目？)</span></li></ul><ul id="e4f82b8f-9ba5-4bc6-8670-a0f42832efd6" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">video essay (optional)</span></li></ul><ul id="03a30ae2-39b6-4160-9fd2-946db7edabb6" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">college transcript</span></li></ul><ul id="8cec1960-31ed-4db4-9a97-8b5a08fd9892" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">GMAT score</span></li></ul><ul id="413e9ca2-3f51-4018-a0be-7e682e19acca" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">References</span></li></ul><ul id="66182f85-21d0-42bd-8be8-3dc987b1eb09" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">TOEFL score</span></li></ul><ul id="b224a380-4fb2-4cc6-b566-1fc1f0bc3bd4" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">InitialView interview</span></li></ul><ul id="6c8e15cf-bb2c-4f06-ba55-9f3f6bd91d4a" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Online application form</span></li></ul><p id="9cd59d46-5400-4505-b1f8-dcd31ebbb35c" class="">
+</p><p id="2dfcb0c0-f60a-4e8e-b517-7db818cffd29" class="">become ever better</p><p id="11f13775-57eb-49ff-9808-3e7f9c31e14d" class="">solution to policy problem</p><p id="f6c0b870-0d7b-4a7b-88ca-c6f2f60d984a" class="">people face tradeoff </p><p id="4b27c2ac-17df-47e2-b9a8-e19c468900c6" class="">dean: 互動 big family</p><p id="2528f74d-de0b-4d60-83c5-ff02f53df27b" class="">how to be problem solver<span style="border-bottom:0.05em solid"> how to think humanly how to be ethical and inclusive equitable </span></p><p id="c9a3d200-7541-43d1-8cad-6d5e6f640235" class="">business education is more important than before, because in this time of uncertainty , transformation (technology), need strategic knowledgable principle business leader more than ever. <span style="border-bottom:0.05em solid">Business school value: take unstructured problems or technological advances transform to being able to add value to society as a whole (glue),</span> risk: concentrated too much about crisis attend, not to build a strategic vision while working against the crisis, just think about revenut</p><p id="f4ff65d3-4f10-42e1-a351-5ea65c67ee00" class="">what we are here for, knowledge, creation and<span style="border-bottom:0.05em solid"> how we can add value to our society,</span> connect alumni (not just getting the diploma)</p><p id="ffd37662-fd42-4dd2-bca9-96d9f1723f58" class="">simon not a big school: advantage: quality, every body step up help each other, community feel a great opportunity </p><p id="5eae0c68-02f0-44eb-93d6-9ea976c466ab" class="">&quot;<strong><mark class="highlight-red">An investment in your future is one of the best investments you can make, and a Simon MS degree will open doors to new career opportunities.&quot;</mark></strong></p><p id="09178f16-1666-4f67-b611-bd6c07160045" class="">
+</p><p id="0289b3e8-083f-4b11-9174-4dc443920d05" class="">
+</p><figure id="65d2b7d1-4fe2-4cad-8331-fc4640f65057" class="image"><a href="University%20of%20Rochester%20b08d610f5a194e4fa8ae0469b6264a17/Untitled.png"><img style="width:832px" src="University%20of%20Rochester%20b08d610f5a194e4fa8ae0469b6264a17/Untitled.png"/></a></figure><p id="20d57080-de54-4baa-a9f4-f36d88fea0d5" class="">I believe that healthy financial decisions are crucial to a brighter future. Accordingly, my ultimate goal in pursuing a master’s degree in finance at the University of Rochester’s Simon Business School is to help individuals and corporations make better financial decisions, which will allow them to achieve their long-term life goals. To achieve my long-term goals, I aspire to become a financial advisor after I graduate, accumulating experience before entering a larger enterprise. For this goal, I aim to pass the CFA exams within 3 to 5 years after obtaining a master’s degree.</p><p id="951c0f90-0bbe-415d-b432-704a9888f555" class="">All my short-term post-graduation goals are to best prepare me for my long-term goals. Consequently, a flexible plan that allows me to adapt to the changing circumstances will help me overcome every hurdle should my short-term goals are not immediately attainable. I will focus on acquiring the knowledge and skills that will lead me to fulfill my ambition. For instance, if the DeFi assets or any developing financial instrument become the major investment vehicle in the future, I will spend my time ascertaining the mechanism behind and supplementing myself with the core technical skills. As a result, I am confident that I will be able to provide assistance for my community under any circumstances.</p><p id="29325365-63c1-4e1f-b521-ba25e8576f17" class="">I believe that excellent communication skills, proficient knowledge of wealth management and financial modeling, and analytical thinking are vital tools for a financial advisor. My background in finance had equipped me with the fundamental knowledge of financial concepts and theories, and I learned how to conduct proper fundamental analysis and evaluate a company using several financial models, such as the discounted cash flow model from the Financial Statement Analysis course. Additionally, to improve my trading strategies, I took the Financial Engineering course, wherein I learned to utilize Python programming to adjust my trading strategies based on backtesting results. These early successes made me eager to learn and become a more well-rounded financial advisor. I believe Simon Business School is the perfect environment for me to expand my academic and practical experience, explore in-depth training, and gain hands-on tools to further my goals.</p><p id="763593de-05d0-4390-8ef6-126d10690d71" class="">With the <em>Quantitative Finance with Python</em> course provided by Simon, I hope to familiarize myself with quantitative models for better financial decision-making. The real-world case studies in this course will teach me how to make decisions more efficiently with analysis models. Moreover, the <em>Asset Management</em> course, which focuses on practical aspects, will help me to better comprehend the larger picture of portfolio management and learn how to tackle potential risks. The internship tracks in the United States offered by Simon Business School are extremely appealing as well. I also intend to take advantage of Simon Business School’s professional student clubs, such as Simon VISION Consulting and the Simon Meliora Fund, to polish my problem-solving skills and put theories into practice. The school’s wide variety of resources will lay the foundation for me to add value to an equally wide variety of societal aspects.</p><p id="0695d2e0-daf8-4126-9355-d10dbe411023" class="">
+</p><figure id="62c1f7cc-7f58-4407-a63b-df871c84dd81" class="image"><a href="University%20of%20Rochester%20b08d610f5a194e4fa8ae0469b6264a17/Untitled%201.png"><img style="width:832px" src="University%20of%20Rochester%20b08d610f5a194e4fa8ae0469b6264a17/Untitled%201.png"/></a></figure><p id="1e6f3e99-0fe1-42e0-a6fc-d15e35fb9906" class="">Apart from staying competitive, I see humanity as the most precious quality that unites human beings when facing challenges, and I firmly believe that participating in volunteer activities and broadening my horizons are among the best ways to be part of the changes we hope to see. During my studies at Taiwan’s National Central University, I had an opportunity to travel to Nepal as a leader of an international medical volunteer group. My role in the group was to manage the group schedule and negotiate a local site for the doctor to provide medical services. In addition to medical services, one of our primary goals was to tackle the problems arising from poverty. Nepal is ranked 180th to 190th globally in GDP per capita. Many Nepalis don’t have a bank account. Instead, they accrue wealth through physical assets such as livestock and properties. To aid local people dealing with poverty issues, my partner and I devised a viable method for them to generate steady income. In cooperation with local university students, we created a connection between a local community committee in Jugedi, Nepal, and the Taipei Global Charity Association, a non-profit organization in Taiwan, to ensure that they could earn money from selling their handicrafts to Taiwan. Living among the Nepalis, experiencing their daily lives, and witnessing their extreme poverty, I learned that financial accessibility is a vital stepping stone to education and health. My volunteer work in Nepal not only cultivated my empathy toward a wide variety of people but also motivated me to create a positive impact in the world.</p><p id="04550178-bb32-420e-937b-e3dd71c631bf" class="">I was born in a small village in Taiwan where agriculture dominates the local economy, and people and small businesses have a relatively low level of financial literacy. Growing up in such an environment instilled in me the desire to help my community increase their access to the financial system and maximize the value of their assets. I am a triplet who was born in a family of eight with my siblings and I study in six different professional fields, which are respectively music, laws, medicine, Chinese medicine, computer science, and finance. Thriving with them together, I learned to respect people from all walks of life. I wholeheartedly understand how teamwork can help everyone succeed as a whole. I want to contribute to our society together with my family members.</p><p id="bb19cac3-f288-4ab6-9137-d3090623c8d5" class="">I value the qualities of altruism, generosity, and kindness. I am excited to be part of dedicated student clubs in Simon, as the clubs provide abundant opportunities for students to contribute to the Rochester community. I am a team player with experience in building connections between different cultures to propel my partners to greater achievements. I believe that I can ignite a spark in your diverse environment and generate synergistic team energy, and I am excited to become part of Simon’s community and become “ever better”.</p><p id="92131d53-c169-4614-a57f-0e599c30adcf" class="">
+</p><p id="f6ff5390-b6aa-472c-b934-251f8b64e1a1" class="">
+</p><p id="278adea6-5136-4fbc-b0ed-938f54dac4b1" class="">
+</p><p id="e790d376-888c-409f-aef4-1969555ff7d5" class="">
+</p><h3 id="0d0c7246-505c-4b20-bc1e-befbf9c5c422" class="">備用</h3><p id="2c5ff244-e3f7-4d7d-8d11-79b467ed7898" class="">My goal as a financial advisor is not only to help my clients make better financial decisions, but also to educate them on the correct financial concepts. </p><p id="31f00707-83c2-479a-a6b6-c76f16170272" class="">Given the experience working with people from different cultural background, </p><p id="ff83a0ba-b47f-4515-857c-f214908034b3" class="">will take action to solve problem </p><p id="b3b2fdde-dbd4-4407-8ea6-b85eea7f14e0" class="">will dedicated myself to bring.... </p><p id="9d23d633-bef6-4e67-bd6c-6dd486fba9e8" class="">serve, make impact to your diverse community </p><p id="4ea92b2f-07b1-4db7-a9dc-7708c117d98a" class="">add value to the society </p><p id="5e1b933c-00da-4706-acbb-dbd818b84e53" class="">Simon provide a stage for me to contribute to your </p><p id="c6fdb99c-f987-40b1-b829-24383f957c94" class="">dedicated myself to serve the needs</p><p id="1e2b3bc7-371a-4795-a7c2-4c2cffa1d850" class="">
+</p><p id="c07e6083-1c68-45d3-b964-56c4427d5f26" class=""> </p><figure id="08c68800-70f1-4bce-87c1-94c546569328" class="image"><a href="University%20of%20Rochester%20b08d610f5a194e4fa8ae0469b6264a17/Untitled%202.png"><img style="width:832px" src="University%20of%20Rochester%20b08d610f5a194e4fa8ae0469b6264a17/Untitled%202.png"/></a></figure><p id="4d5a9584-e7a0-47f4-a5c1-b4d09a32f7c2" class="">The very first question that flashed through my mind the day I stepped onto the campus as a first-year student was “what can I take with me except knowledge from books and a piece of diploma after four years of undergraduate studies?” I wanted to utilize every moment to create more valuable times. Therefore, I participated in several extracurricular activities, such as campus recruiting events, an international volunteer group, and an alumni association, to explore more possibilities in my life. These experiences also prepared me to become a more well-rounded decision-maker.</p><p id="f6d191aa-7e16-4e05-8779-7787f8d7966b" class="">During the period I served as the CEO of NCU Campus Recruiting Events, my job was to organize several career fairs and corporate briefings for the school. Among the events we had held, the spring career fair was our major event of the year. We had 25 team members, with 8 months of planning leading up to the event. We prepared documents and delivered presentations to raise funds from the government, checked every tiny detail with 129 attending corporates, and held several marketing campaigns to attract students to participate in our events.</p><p id="429248cc-cc1d-4f1f-a78d-bafafc7ffbe5" class="">However, because of the pandemic outbreak, we were forced to cancel our physical career fair a month before the scheduled date. Although the news was demoralizing, I regarded the obstruction as an invaluable opportunity for our team to create something fresh and innovative. After a three-day discussion, we decided to collaborate with Tempest Digital Ltd., a gaming company founded by NCU alumni, to host the career fair in the form of an online game. We wanted to build a new form of career fair while at the same time containing the core features of physical events. We designed customized cabins for each firm in the game so that the participants can visit different firms on the map and explore recruiting information provided by the firm. More importantly, the participants could not only experience the joy in gaming but also deliver their resume instantly or consult with HRs through webcam directly. Consequently, visitors at the career fair almost doubled the achieved numbers from the previous years, and the number of views had reached 30K within three days. We also achieved an 88% overall satisfaction rate of attending corporates.</p><p id="2c00ec8c-968b-46a6-bf80-a68b8541f0a7" class="">The pandemic put many events on hold, but it could never stop anyone from pursuing their goals. The world is constantly changing and so are our plans. I am grateful that these experiences strengthened my will to face the unknown, motivated me to always keep up with the trends of the world, and reminded me to relentlessly improve myself. I am convinced that accumulating knowledge and polishing my skill sets in every aspect are the best ways to adapt to different scenarios and changes. To become a specialist in the field of finance, I see Simon Business School as my best investing opportunity, and I sincerely believe that together we can make meaningful changes and make the world a better place.</p><p id="86bf0bb0-e0e7-43ed-9161-9b4891a1c2f8" class="">
+</p><p id="d05edbf5-cb7f-4d0c-a3cb-e6a2e2836bff" class="">
+</p><p id="3440b991-d216-4c3e-9bb3-00b199fb1b89" class="">
+</p><p id="4af9cfe0-d2fb-4673-86d1-f0985e7c768a" class="">
+</p><p id="ea82c135-3dc9-4796-9a6b-bec887e83c8c" class="">
+</p><p id="b68b5b1a-cba9-42fd-bbf6-aaff3831300e" class="">
+</p><p id="fd4e3c78-aa5f-4855-a522-fb925764b307" class="">
+</p><p id="d20a67cb-91d6-422c-9547-de13b5a9211e" class="">
+</p><p id="7fa20937-895f-4aff-b695-ead6fbba2512" class="">
+</p><p id="946874b3-104f-4c4e-99f6-e00766423b2b" class="">
+</p><p id="8b185d8a-2ab0-40db-b75b-d5a89a1aeab3" class="">to best assist </p><p id="e1737846-b5fa-4c13-91b5-a384cceaac68" class="">The experience has made me realize that not knowing the next step doesn’t mean my world is going to crumble.</p><p id="bb66ef5c-2c47-4630-a5d4-80ce46351723" class="">we just need to adapt to the changing scenario </p><p id="999fd38d-5b76-4d94-bc8e-6995c3d59f52" class="">I came to realize that </p><p id="25b4fd9d-f26f-4746-929d-3cb4b8a7a832" class="">On the other hand,...</p><p id="1dfa91fe-ab8d-433a-8927-ef528f0d1d74" class="">面對這樣的困難讓我不再擔心未來的不確定性，更有信心能夠為這個世界貢獻</p><p id="04dc3feb-b86e-4ada-96f4-40b7a57573ab" class="">to become a specialist in financial advisory , 我需要借助你們的力量</p><p id="39856458-a54c-4021-836c-62ea14187642" class="">I have to accumulate my knowledge and polish my skills in every aspect.</p><p id="becd1353-aa2c-4c48-9491-f52f4f74116e" class="">first time to lead a team to do a big project</p><p id="9aa6cc84-e0a1-4462-80d9-00b71015513a" class="">an indispensable chance to</p><h3 id="d7416ded-f3aa-41a5-b561-dff08689198c" class="">備用</h3><p id="dda96e82-412c-47cd-9c32-9ffa9847019a" class="">“Live a life you will remember”, written by the late Swedish DJ Avicii, depicts my strong believe in grasping every moment to create more valuable time, trying a variety of different things, and exploring more possibilities in my life.</p><p id="16bd0ab2-5a94-47f6-a40c-50bb4f5c5563" class="">Currently, I’m the leader of NCU Career Student Team, organizing with several members to hold corporate exhibitions for 100+ companies and corporate briefings for 50+ companies throughout the school year. Our team reached 88% overall satisfaction by the corporates we served.</p><p id="95c96bd0-1d2d-499b-8e06-d591ecb70edb" class="">
+</p><p id="53b3d0f9-f3d2-49ad-be0d-c44d9ab038a3" class="">During the period he worked for the career center, I found him to be a thoughtful and well-rounded decision-maker. For example, the campus recruiting team included seven separate groups, and each had its own complicated content. He proactively made a detailed list, which was labeled with corresponding due dates, to track all the pending issues and tasks that each group should be doing. Additionally, he ensured that all the tasks were done correctly and efficiently. He exhibited a range of skills in managing his duty and made a valuable contribution to the entire team. Furthermore, what impressed me the most was Chi-Yuan’s adaptability in the face of challenges. For instance, because of the pandemic outbreak, we had no choice but to cancel the physical career fair. However, instead of feeling overwhelmed, Chi-Yuan proposed hosting the virtual career fair in gaming format and soon mobilized his team to conduct the project. Collaborating with a gaming company, Tempest Digital Ltd., they successfully transplanted all the features of the physical career fair, including real-time interaction with HR, resume submission, and reward cards, into a virtual version. Ultimately, the visitors at the career fair totaled double the number from the year before, reaching up to 7,000 within three days. It was fascinating and mind-blowing for me to see such a marvelous result in merely a month.</p><p id="876bebe4-7afa-417d-b422-c52a19ac9609" class="">
+</p></div></article></body></html>
